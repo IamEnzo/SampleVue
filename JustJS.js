@@ -4,3 +4,10 @@ new Vue({
         sampledata: 'yah yah yah XB'
     }
 });
+
+new Vue({
+    el:'#element-handler',
+    data:{
+        justmsg: 'ano lalabas dito'
+    }
+});
