@@ -8,6 +8,6 @@ new Vue({
 new Vue({
     el:'#element-handler',
     data:{
-        justmsg: 'ano lalabas dito'
+        justmsg: ''
     }
 });
