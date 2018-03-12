@@ -8,6 +8,7 @@ new Vue({
 new Vue({
     el:'#element-handler',
     data:{
-        justmsg: ''
+        justmsg: '', //default datas
+        smplcheck: false, 
     }
 });

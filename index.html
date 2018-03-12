@@ -1,16 +1,31 @@
 <html>
     <head>
-        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue"></script> <!--link of latest vue-->
     </head>
     <body>
-        sample text 21312344234 yah yah yah hihi
+        
         <div id='sample-div'>
             <span>{{ sampledata }}</span>
         </div>
+        
         <div id='element-handler'>
             <label>Message is: {{ justmsg }}</label>
-            <input v-model='justmsg' placeholder="Input something here...">
+            <input type='text' v-model='justmsg' placeholder="Input something here...">
+
+            <input type="checkbox" id="checkbox" v-model="smplcheck">
+            <label>{{ smplcheck }}</label>
+
+            <!--Multiple Checkboxes-->
+            <input type="checkbox" id="Enzo" v-model="mltplecheck">
+            <label for="Cruz">Cruz</label>
+            <input type="checkbox" id="Lorenzo" v-model="mltplecheck">
+            <label for="Lorenzo">Lorenzo</label>
+            <input type="checkbox" id="Malihan" v-model="mltplecheck">
+            <label for="Malihan">Malihan</label>
+            <input type="checkbox" id="Cruz" v-model="mltplecheck">
+            <label for="Enzo">Enzo</label>
         </div>
+
         <script src='JustJS.js'></script>
     </body>
 </html>
