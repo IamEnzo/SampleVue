@@ -10,5 +10,7 @@ new Vue({
     data:{
         justmsg: '', //default datas
         smplcheck: false, 
+        mltplecheck: [],
+        radiobtn: ''
     }
 });

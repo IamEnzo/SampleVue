@@ -9,21 +9,35 @@
         </div>
         
         <div id='element-handler'>
+            <input type='text' v-model='justmsg' placeholder="Input something here..."><br>
             <label>Message is: {{ justmsg }}</label>
-            <input type='text' v-model='justmsg' placeholder="Input something here...">
-
+            <br>
             <input type="checkbox" id="checkbox" v-model="smplcheck">
-            <label>{{ smplcheck }}</label>
-
+            <label>{{ smplcheck }}</label> -- Check if true or false
+            <br>
             <!--Multiple Checkboxes-->
-            <input type="checkbox" id="Enzo" v-model="mltplecheck">
-            <label for="Cruz">Cruz</label>
-            <input type="checkbox" id="Lorenzo" v-model="mltplecheck">
-            <label for="Lorenzo">Lorenzo</label>
-            <input type="checkbox" id="Malihan" v-model="mltplecheck">
-            <label for="Malihan">Malihan</label>
-            <input type="checkbox" id="Cruz" v-model="mltplecheck">
+            <input type="checkbox" id="Enzo" value='Enzo' v-model="mltplecheck">
             <label for="Enzo">Enzo</label>
+            <br>
+            <input type="checkbox" id="Lorenzo" value="Lorenzo" v-model="mltplecheck">
+            <label for="Lorenzo">Lorenzo</label>
+            <br>
+            <input type="checkbox" id="Malihan" value="Malihan" v-model="mltplecheck">
+            <label for="Malihan">Malihan</label>
+            <br>
+            <input type="checkbox" id="Cruz" value="Cruz" v-model="mltplecheck">
+            <label for="Cruz">Cruz</label>
+            <br>
+            <span>Chosen: {{ mltplecheck }} </span>
+            <br>
+            <input type="radio" id="one" value="One" v-model="radiobtn">
+            <label>One</label>
+            <br>
+            <input type="radio" id="two" value="Two" v-model="radiobtn">
+            <label>Two</label>
+            <br>
+            <span>Clicked: {{ radiobtn }} </span>
+            
         </div>
 
         <script src='JustJS.js'></script>
