@@ -1,6 +1,7 @@
 <html>
     <head>
         <script src="https://unpkg.com/vue"></script> <!--link of latest vue-->
+        <link rel="stylesheet" href="css/StyleSheet.css">
     </head>
     <body>
         
@@ -39,7 +40,32 @@
             <span>Clicked: {{ radiobtn }} </span>
             
         </div>
-
+        <br>
+        <div id='tblcontainer' v-model='tblcontainer'>
+            <table id='sampletbl'>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Birthday</th>
+                    <th>Address</th>
+                    <th></th>
+                    </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SampleName</td>
+                        <td>SampleAge</td>
+                        <td>SampleBirthday</td>
+                        <td>SampleAddress</td>
+                        <td>
+                            <button id='btnedit' v-model='btnedit'>Edit</button>
+                            <button id='btndel' v-model='btndel'>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <script src='JustJS.js'></script>
     </body>
 </html>
