@@ -4,7 +4,7 @@ if($connect->connect_error){
     die('Could not connect to database!');
 }
 else{
-    echo "wew";
+    echo "weww";
 }
 
 
